@@ -1,6 +1,4 @@
 /*
-Santa Claus 🎅 está revisando el inventario de su taller para preparar la entrega de regalos. Los elfos han registrado los juguetes en un array de objetos, pero la información está un poco desordenada. Necesitas ayudar a Santa a organizar el inventario.
-
 Recibirás un array de objetos, donde cada objeto representa un juguete y tiene las propiedades:
 
 name: el nombre del juguete (string).
@@ -23,10 +21,8 @@ const inventory: Inventory = [
     { name: 'car', quantity: 2, category: 'toys' },
     { name: 'racket', quantity: 4, category: 'sports' }
 ]
-
-console.log(organizeInventory(inventory));
-
-// Resultado esperado:
+const organizedInventory = organizeInventory(inventory)
+console.log(organizedInventory);
 // {
 //   toys: {
 //     doll: 5,
@@ -42,10 +38,8 @@ const inventory2 = [
     { name: 'book', quantity: 5, category: 'education' },
     { name: 'paint', quantity: 3, category: 'art' }
 ]
-
-console.log(organizeInventory(inventory2));
-
-// Resultado esperado:
+const organizedInventory2 = organizeInventory(inventory2)
+console.log(organizedInventory2);
 // {
 //   education: {
 //     book: 15
